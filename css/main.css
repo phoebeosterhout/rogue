@@ -3,9 +3,6 @@
 	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
 html {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	font-size: 16px;
 }
 
@@ -14,13 +11,16 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 1em;
 }
 
 .container{
+	max-width: 1200px;
+	width: 90%;
 	display: flex;
 	justify-content: center;
-	flex-flow: column wrap;
-	width: 100%;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
 h1,
@@ -30,9 +30,10 @@ h4 {
 	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
+	text-align: center;
 }
 h1 {
-	font-size: 2em;
+	font-size: 1.875em;
 }
 h2 {
     font-size: 1.5em;
@@ -52,17 +53,19 @@ p {
 
 /*The widths are in a percentage!*/
 header {
+	text-align: center;
 	display: flex;
 	justify-content: center;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	margin: 0;
 	width: 100%;
 }
 
 header h1 {
 	display: flex;
 	justify-content: center;
+	font-size: 1.875em;
 	padding: 0.5em;
 	border-bottom: 3px solid #77a466;
 }
@@ -72,25 +75,19 @@ header h1 span {
 }
 
 header nav {
-	display: flex;
-	justify-content: space-around;
-	flex-flow: column wrap;
-	padding-bottom: 1em;
+	padding: 1.25em 0;
 	width: 100%;
 }
 header nav ul {
-	display: flex;
-	flex-flow: column wrap;
 	margin: 0;
 	padding: 0;
 }
 header nav ul li {
-	display: flex;
-	justify-content: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1em;
-	padding: 1em;
+	padding: 1em 0;
+	list-style: none;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -98,46 +95,23 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
-.top-section,
-.bottom-section,
-.main-image,
-.main-image img,
-.main-title,
-.section-one,
-.section-two,
-.section-three,
-.section-one h4,
-.section-two h4,
-.section-three h4,
-.menu li,
-.reviews,
-.address {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-}
 
 .top-section,
 .bottom-section {
-	flex-flow: column wrap;
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row wrap;
 }
 
-.main-image {
-	height: auto;
-	width: 100%;
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	flex-flow: column wrap;
-	padding: 0 1em;
-}
 .main-title h3 {
 	text-align: left;
+	font-size: 1.125em;
 	padding: 0.25em 0;
 	color: #77a466;
 }
@@ -150,7 +124,6 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	flex-flow: column wrap;
 	width: 100%;
 	border-top: 1px solid #eee;
 }
@@ -198,9 +171,9 @@ header nav ul li a{
 footer {
 	display: flex;
 	justify-content: center;
-	height: 4em;
+	align-items: center;
+	flex-flow: row wrap;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
 	text-align: center;
 	width: 100%;
 }
@@ -208,5 +181,5 @@ footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
 }
